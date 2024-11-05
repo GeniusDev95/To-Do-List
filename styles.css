@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    background: rgb(238,174,212);
+    background: radial-gradient(circle, rgba(238,174,212,1) 0%, rgba(110,101,190,1) 100%);
+}
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: 100px auto 20px auto;
+    padding: 15px 20px 15px 20px;
+    background:#FAF9F6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px 20px 0px 20px;
+    background: #FAF9F6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* position: absolute; */
+  
+}
+
+h3 {
+    margin: 0;
+    color: #9a33ff;
+    font-weight: bolder;
+}
+
+button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    
+}
+
+button:hover {
+    background: #218838;
+}
+
+#addTaskButton{
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    position: relative;
+    bottom: -30px;
+    background-color: #9a33ff;
+}
+
+
+#clearAllButton, #submitTaskButton{
+    background-color: white;
+    color: black;
+    margin: 0%;
+    padding: 0%;
+    color: #9a33ff;
+}
+
+#submitTaskButton{
+    position: relative;
+    right: 15px;
+    z-index: 999;   
+    width: 22px;
+}
+
+
+#taskInput{
+    border: 1px solid #9a33ff ;
+    min-width: 300px;
+    position: relative;
+    left: 15px;
+}
+#taskInput:focus{
+    border: none;
+    border: 3px solid #9a33ff ;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+    background: #f9f9f9;
+    margin: 5px 0;
+    border-radius: 4px;
+    width: auto;
+}
+
+.leftDiv{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    /* position: absolute; */
+}
+
+.remove {
+    margin-left: auto;
+    color: black;
+    background: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+.remove:hover {
+    color:  #dc3545;
+    background: #f9f9f9;
+    
+}
+
+.task-checkbox {
+    margin-right: 10px; /* Add some space between checkbox and task text */
+    min-width: 18px;       
+}
+
+.task-checkbox:checked{
+    background-color: #9a33ff;
+    box-shadow: none;
+}
+
+
+@media screen and (max-width: 530px){
+
+    h3{
+        font-size: large;
+    }
+    /* #clearAllButton{
+        width: 30px;
+    } */
+
+    .header1, .container{
+        max-width: 90%;
+    }
+
+    #submitTaskButton{
+        position: relative;
+        /* right: 15px; */
+        z-index: 999;   
+        width: 22px;
+    }
+    
+    
+    #taskInput{
+        border: 1px solid #9a33ff ;
+        min-width: 160px ;
+        position: relative;
+        /* left: 15px; */
+        /* font-size: small; */
+    }
+}
