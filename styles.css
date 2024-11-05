@@ -25,7 +25,6 @@ body {
     background: #FAF9F6;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* position: absolute; */
   
 }
 
@@ -143,9 +142,7 @@ li {
     h3{
         font-size: large;
     }
-    /* #clearAllButton{
-        width: 30px;
-    } */
+    
 
     .header1, .container{
         max-width: 90%;

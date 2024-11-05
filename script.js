@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
          textDiv.appendChild(document.createTextNode(taskText));
 
  
-         // Append checkbox and task text to the list item
+         // Append checkbox and textbox to the new div
          leftDiv.appendChild(checkbox);
          leftDiv.appendChild(textDiv);
 
